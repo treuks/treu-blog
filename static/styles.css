@@ -1,0 +1,194 @@
+
+:root {
+    font-family: "Outfit", sans-serif;
+}
+
+.background {
+    background-color: #CDFBF2;
+    width: 100svw;
+    height: 100svh;
+}
+
+.blog-background {
+    background-color: #FBCDE3;
+    width: 100svw;
+}
+
+.about-thing {
+    display: flex;
+    flex-direction: column;
+    margin-top: 12rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-group {
+    line-height: 1.2;
+}
+
+.platform-links {
+    display: flex;
+    flex-direction: row;
+    gap: 1.7rem;
+    list-style-type: none;
+}
+
+.discord-thing {
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+    align-items: center;
+    height: 4.5rem;
+
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    border-radius: 1.666rem;
+
+    background-color: #F4F4F4;
+}
+
+.discord-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.discord-text {
+    font-size: 1.2rem;
+    color: #161616;
+    font-weight: 400;
+}
+
+.link-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #161616;
+
+    height: 4.5rem;
+    width: 4.5rem;
+
+    border-radius: 1.65rem;
+
+    background-color: #F4F4F4;
+
+    box-shadow: 1px 3px 4px #12836D69
+}
+
+.link-logo {
+    height: 1.75rem;
+    width: 1.75rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.big-text {
+    font-size: 4rem;
+    font-weight: 900;
+    color: #161616;
+}
+
+.smol-text {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #161616a3;
+}
+
+.subtitle {
+    margin-bottom: 1.2rem;
+    font-size: 1.15rem;
+    font-weight: 400;
+    color: #161616ba;
+}
+
+.header { 
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+}
+
+.inner-header {
+    margin-left: 4rem;
+}
+
+
+@media screen and (max-width: 600px) {
+    .list-of-links {
+        flex-direction: column !important;
+        gap: 0rem !important;
+    }
+
+    .about-thing {
+        margin-top: 4rem!important;
+        align-items: flex-start;
+    }
+
+    .text-group {
+        padding-left: 2rem;
+    }
+
+    .big-text {
+        font-size: 2.25rem;
+    }
+
+    .smol-text {
+        font-size: 1.45rem;
+    }
+
+    .subtitle {
+        padding-left: 2rem;
+    }
+
+    .link {
+        font-size: 2rem!important;
+    }
+
+    .link[aria-current='page'] {
+        font-size: 3.5rem!important;
+    }
+
+    .header {
+        padding-top: 4rem;
+    }
+
+    .inner-header {
+        margin-left: 2rem;
+    }
+
+    .platform-links {
+        flex-direction: column;
+    }
+}
+
+.list-of-links {
+    display: flex;
+    align-items: baseline;
+    gap: 3rem;
+    flex-direction: row;
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.link {
+    color: #161616a3;
+    font-size: 3.5rem;
+    font-weight: 300;
+}
+
+.link[aria-current='page'] {
+    color: #161616;
+    font-weight: 900;
+    font-size: 4rem;
+    text-decoration: none;
+}
+
