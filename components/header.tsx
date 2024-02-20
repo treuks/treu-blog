@@ -8,7 +8,7 @@ export default function Header() {
                         <a href="/" class="link">About me</a>
                     </li>
                     <li class="link">
-                        <a href="/blogposts" class="link">Blog</a>
+                        <a href="/posts" class="link">Blog</a>
                     </li>
                 </ul>
             </div>

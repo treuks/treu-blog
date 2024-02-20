@@ -4,8 +4,9 @@
 
 import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
-import * as $blogposts from "./routes/blogposts.tsx";
 import * as $index from "./routes/index.tsx";
+import * as $post_article_ from "./routes/post/[article].tsx";
+import * as $posts from "./routes/posts.tsx";
 
 import { type Manifest } from "$fresh/server.ts";
 
@@ -13,8 +14,9 @@ const manifest = {
   routes: {
     "./routes/_404.tsx": $_404,
     "./routes/_app.tsx": $_app,
-    "./routes/blogposts.tsx": $blogposts,
     "./routes/index.tsx": $index,
+    "./routes/post/[article].tsx": $post_article_,
+    "./routes/posts.tsx": $posts,
   },
   islands: {},
   baseUrl: import.meta.url,

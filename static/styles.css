@@ -12,6 +12,101 @@
 .blog-background {
     background-color: #FBCDE3;
     width: 100svw;
+    min-height: 100svh;
+}
+
+
+
+.article-stuff {
+    text-align: center;
+}
+
+.article-title {
+    font-weight: 900;
+    font-size: 4rem;
+    color: #161616;
+}
+
+.article-date {
+    font-size: 1.15rem;
+    color: #161616c5;
+}
+
+.article-background {
+    padding-top: 2rem;
+    background-color: #FBCDE3;
+    display: flex;
+    justify-content: center;
+}
+
+.post-card-title {
+    font-weight: 900;
+    color: #161616;
+    font-size: 3.25rem;
+}
+
+.post-card-title a {
+    color: #161616;
+}
+
+.blankspace {
+    margin-bottom: 1rem;
+}
+
+.post-card-wrapper {
+    padding-left: 3rem;
+}
+
+.post-card-date {
+    font-size: 1.20rem;
+    color: #161616c5;
+}
+
+.post-card-snippet {
+    font-size: 1.30rem;
+    color: #161616db;
+    padding-bottom: 2rem;
+}
+
+.markdown-body {
+    background-color: #FBCDE3 !important;
+    font-family: "Outfit", sans-serif !important;
+}
+
+.markdown-body p {
+    font-size: 1.15rem;
+}
+
+.markdown-body h1 {
+    border-bottom: 1px solid #1616165d !important;
+}
+
+.markdown-body h2 {
+    border-bottom: 1px solid #1616165d !important;
+}
+
+.markdown-body h3 {
+    border-bottom: 1px solid #1616165d !important;
+}
+
+.markdown-body h4 {
+    border-bottom: 1px solid #1616165d !important;
+}
+
+.markdown-body h5 {
+    border-bottom: 1px solid #1616165d !important;
+}
+
+.markdown-body h6 {
+    border-bottom: 1px solid #1616165d !important;
+}
+
+.article-text {
+    width: 65svw;
+}
+
+pre {
+    font-family: "JetBrains Mono", "Cascadia Code", "SF Mono", monospace !important;
 }
 
 .about-thing {
@@ -164,6 +259,32 @@
 
     .platform-links {
         flex-direction: column;
+    }
+
+    .article-text {
+        width: 95svw;
+    }
+
+    .article-stuff {
+        text-align: left;
+        padding-left: 1rem;
+        padding-top: 3rem;
+    }
+
+    .article-title {
+        font-size: 2.5rem;
+    }
+
+    .blankspace {
+        margin-bottom: 3rem;
+    }
+
+    .post-card-wrapper {
+        padding-left: 2rem;
+    }
+
+    .post-card-title {
+        font-size: 2.25rem;
     }
 }
 
