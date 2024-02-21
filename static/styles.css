@@ -72,6 +72,7 @@
     font-size: 1.30rem;
     color: #161616db;
     padding-bottom: 2rem;
+    max-width: 32rem;
 }
 
 .markdown-body {

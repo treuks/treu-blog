@@ -21,6 +21,15 @@ export default function ArticlePage(props: PageProps<Post>) {
                 <Head>
                     <style dangerouslySetInnerHTML={{__html: CSS}}/>
                     <title>TreuKS - {post.title}</title>
+                    <meta property="og:title" content={post.title} />
+                    <meta property="og:description" content={post.snippet} />
+                    <meta property="og:url" content={`${props.url}`} />
+                    <meta name="article:author" content="TreuKS"/>
+                    <meta name="article:published_time" content={post.publishedAt.toISOString()} />
+
+                    <meta name="description" content={post.snippet} />
+                    <meta name="theme-color" content="#fbcde3"/>
+
                     <style>
                     @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap')
                     </style>
