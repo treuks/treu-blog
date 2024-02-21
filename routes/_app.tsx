@@ -12,6 +12,7 @@ export default function App({ Component }: PageProps) {
         <style>
           @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap')
         </style>
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link rel="icon" type="image/png" href="/favicon.png" />
         <link rel="stylesheet" href="/styles.css" />
         <link rel="stylesheet" href="/reset.css" />
