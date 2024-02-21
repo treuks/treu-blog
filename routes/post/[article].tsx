@@ -24,6 +24,9 @@ export default function ArticlePage(props: PageProps<Post>) {
                     <meta property="og:title" content={post.title} />
                     <meta property="og:description" content={post.snippet} />
                     <meta property="og:url" content={`${props.url}`} />
+                    <meta property="og:image" content="/placeholder.jpg" />
+
+                    <meta name="og:site_name" content="TreuKS"/>
                     <meta name="article:author" content="TreuKS"/>
                     <meta name="article:published_time" content={post.publishedAt.toISOString()} />
 
