@@ -1,6 +1,6 @@
 ---
 title: First blog post!
-published_at: 2022-11-04T15:00:00.000Z
+published_at: 2024-02-21T00:04:30.502Z
 snippet: just a test article
 ---
 
