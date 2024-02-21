@@ -147,7 +147,8 @@ pre {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    color: #161616;
+    
     width: 1.5rem;
     height: 1.5rem;
 }
