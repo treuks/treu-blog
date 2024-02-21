@@ -41,11 +41,17 @@
 
 .post-card-title {
     font-weight: 900;
-    color: #161616;
+    color: #161616d7;
     font-size: 3.25rem;
+    
 }
 
 .post-card-title a {
+    color: #161616d7;
+    transition: color 0.2s;
+}
+
+.post-card-title a:hover {
     color: #161616;
 }
 
@@ -172,7 +178,13 @@ pre {
 
     background-color: #F4F4F4;
 
-    box-shadow: 1px 3px 4px #12836D69
+    box-shadow: 1px 3px 4px #12836D69;
+    transition: box-shadow 0.25s;
+}
+
+.link-block:hover {
+    box-shadow: 0px 1px 2px #12836c88;
+    background-color: #ffffff;
 }
 
 .link-logo {
@@ -305,6 +317,11 @@ pre {
     color: #161616a3;
     font-size: 3.5rem;
     font-weight: 300;
+    transition: color 0.15s;
+}
+
+.link:hover {
+    color: #161616;
 }
 
 .link[aria-current='page'] {
