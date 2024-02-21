@@ -27,8 +27,12 @@ export default function ArticlePage(props: PageProps<Post>) {
                     
                     // we do a bit of hardcoding :tf: 
                     <meta property="og:image" content="https://treuks.deno.dev/placeholder.jpg" />
-
+                    <meta property="og:image:width" content="512" />
+                    <meta property="og:image:height" content="512" />
+                    <meta property="og:image:alt" content="Chinese symbol for the number 7, on a pink background" />
                     <meta name="og:site_name" content="TreuKS"/>
+
+                    <meta property="og:type" content="article"/>
                     <meta name="article:author" content="TreuKS"/>
                     <meta name="article:published_time" content={post.publishedAt.toISOString()} />
 
