@@ -109,7 +109,8 @@
 }
 
 .article-text {
-    width: 65svw;
+    width: 42svw;
+    max-width: 56rem;
 }
 
 pre {
