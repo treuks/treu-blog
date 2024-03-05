@@ -20,7 +20,7 @@ export default function About() {
                     <PlatformLink name="GitHub" href="https://github.com/treuks">
                         <GithubLogo/>
                     </PlatformLink>
-                    <PlatformLink name="Bluesky" href="https://bsky.app/profile/treuks.bsky.social">
+                    <PlatformLink name="Bluesky" href="https://bsky.app/profile/treuks.com">
                         <BlueskyLogo/>
                     </PlatformLink>
 
