@@ -78,7 +78,7 @@
 }
 
 .post-card-title {
-    font-weight: 900;
+    font-weight: 200;
     color: #161616d7;
     font-size: 3.25rem;
     
@@ -86,11 +86,12 @@
 
 .post-card-title a {
     color: #161616d7;
-    transition: color 0.2s;
+    transition: color, font-weight 0.2s;
 }
 
 .post-card-title a:hover {
     color: #161616;
+    font-weight: 700;
 }
 
 .blankspace {
@@ -385,11 +386,12 @@ code {
     color: #161616a3;
     font-size: 3.5rem;
     font-weight: 300;
-    transition: color 0.15s;
+    transition: color, font-weight 0.15s;
 }
 
 .link:hover {
     color: #161616;
+    font-weight: 800;
 }
 
 .link[aria-current='page'] {
