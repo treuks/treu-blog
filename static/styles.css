@@ -1,6 +1,23 @@
 
+@font-face {
+    font-family: 'Outfit Var';
+    src: url(Fonts/Outfit/Outfit-VariableFont.woff2) format("woff2-variations");
+    font-weight: 100 1000;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Martian Mono Var';
+    src: url(Fonts/MartianMono/MartianMono-VariableFont.woff2) format("woff2-variations");
+    font-weight: 100 1000;
+    font-style: normal;
+}
+
 :root {
-    font-family: "Outfit", sans-serif;
+    font-family: "Outfit Var", sans-serif;
+    
+    --code-font: "Martian Mono Var", "JetBrains Mono", "Cascadia Code", monospace;
+    --sans-serif-font: "Outfit Var", sans-serif;
 }
 
 .background {
@@ -15,7 +32,28 @@
     min-height: 100svh;
 }
 
+.footer {
 
+    position: static;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+
+    align-items: flex-end;
+    justify-content: flex-end;
+
+
+    height: 5rem;
+    width: 100%;
+    background-color: #FBCDE3;
+    color: #161616;
+}
+
+.footer-text {
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+}
 
 .article-stuff {
     text-align: center;
@@ -77,19 +115,25 @@
 
 .markdown-body {
     background-color: #FBCDE3 !important;
-    font-family: "Outfit", sans-serif !important;
+    font-family: var(--sans-serif-font) !important;
 }
 
 .markdown-body p {
-    font-size: 1.15rem;
+    font-size: 1.15rem !important;
 }
 
 .markdown-body h1 {
     border-bottom: 1px solid #1616165d !important;
+    font-size: 3rem !important;
+    font-weight: 200 !important;
 }
+
+
 
 .markdown-body h2 {
     border-bottom: 1px solid #1616165d !important;
+    font-size: 2.5rem;
+    font-weight: 300 !important;
 }
 
 .markdown-body h3 {
@@ -114,8 +158,26 @@
 }
 
 pre {
-    font-family: "JetBrains Mono", "Cascadia Code", "SF Mono", monospace !important;
+    font-family: var(--code-font) !important;
+    font-weight: 500!important;
+    line-height: 1.85 !important;
 }
+
+.token {
+    line-height: 1.85 !important;
+}
+
+code {
+    font-family: var(--code-font) !important;
+    /* font-weight: 200!important; */
+    line-height: 1.75 !important;
+}
+
+.markdown-body .highlight pre, .markdown-body pre {
+    border-radius: 1.1rem!important;
+}
+
+
 
 .about-thing {
     display: flex;
@@ -277,17 +339,21 @@ pre {
     }
 
     .article-text {
-        width: 95svw;
+        width: 90svw;
+    }
+
+    .article-date {
+        font-size: 1.35rem;
     }
 
     .article-stuff {
         text-align: left;
-        padding-left: 1rem;
+        padding-left: 1.5rem;
         padding-top: 3rem;
     }
 
     .article-title {
-        font-size: 2.5rem;
+        font-size: 3.2rem;
     }
 
     .blankspace {
@@ -299,7 +365,7 @@ pre {
     }
 
     .post-card-title {
-        font-size: 2.25rem;
+        font-size: 2.45rem;
     }
 }
 

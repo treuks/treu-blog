@@ -2,6 +2,7 @@ import { getPost, Post } from "../posts.tsx"
 import { Handlers } from "$fresh/server.ts";
 import { PageProps } from "$fresh/server.ts";
 import Header from "../../components/header.tsx"
+import Footer from "../../components/footer.tsx"
 import { CSS, render } from "$gfm";
 import { Head } from "$fresh/runtime.ts"
 
@@ -39,9 +40,6 @@ export default function ArticlePage(props: PageProps<Post>) {
                     <meta name="description" content={post.snippet} />
                     <meta name="theme-color" content="#fbcde3"/>
 
-                    <style>
-                    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap')
-                    </style>
                 </Head>
 
                 <Header/>
@@ -59,6 +57,7 @@ export default function ArticlePage(props: PageProps<Post>) {
                         dangerouslySetInnerHTML={{ __html: render(post.content)}}
                     />
                 </article>  
+                <Footer />
             </main>
 
         </>
