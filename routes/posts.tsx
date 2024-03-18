@@ -3,6 +3,7 @@ import Header from "../components/header.tsx"
 import About from "../components/about.tsx"
 import { extract } from "$std/front_matter/any.ts";
 import { join } from "$std/path/mod.ts";
+import { Head } from "$fresh/runtime.ts"
 
 export type Post = {
   slug: string;
@@ -58,6 +59,9 @@ export default async function Blogposts() {
   const posts = await getPosts();
   return (
     <>
+      <Head>
+        <meta name="theme-color" content="#fbcde3"/>
+      </Head>
       <main class="blog-background">
         <Header/>
         <div class="blankspace"></div>

@@ -28,7 +28,7 @@
 
 .blog-background {
     background-color: #FBCDE3;
-    width: 100svw;
+    width: 100%; 
     min-height: 100svh;
 }
 
