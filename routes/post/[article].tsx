@@ -21,7 +21,7 @@ export default function ArticlePage(props: PageProps<Post>) {
             <main class="blog-background">
                 <Head>
                     <style dangerouslySetInnerHTML={{__html: CSS}}/>
-                    <title>TreuKS - {post.title}</title>
+                    <title>treuks - {post.title}</title>
                     <meta property="og:title" content={post.title} />
                     <meta property="og:description" content={post.snippet} />
                     <meta property="og:url" content={`${props.url}`} />
@@ -31,10 +31,10 @@ export default function ArticlePage(props: PageProps<Post>) {
                     <meta property="og:image:width" content="512" />
                     <meta property="og:image:height" content="512" />
                     <meta property="og:image:alt" content="Chinese symbol for the number 7, on a pink background" />
-                    <meta name="og:site_name" content="TreuKS"/>
+                    <meta name="og:site_name" content="treuks"/>
 
                     <meta property="og:type" content="article"/>
-                    <meta name="article:author" content="TreuKS"/>
+                    <meta name="article:author" content="treuks"/>
                     <meta name="article:published_time" content={post.publishedAt.toISOString()} />
 
                     <meta name="description" content={post.snippet} />

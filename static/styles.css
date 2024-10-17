@@ -34,26 +34,22 @@
 
 .footer {
 
-    position: static;
+    position: fixed;
     bottom: 0;
-    left: 0;
+    right: 0;
 
     display: flex;
 
-    align-items: flex-end;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
 
 
-    height: 5rem;
-    width: 100%;
-    background-color: #FBCDE3;
+    height: 2.85rem;
+    width: 15rem;
     color: #161616;
 }
 
-.footer-text {
-    margin-right: 1rem;
-    margin-bottom: 0.5rem;
-}
+
 
 .article-stuff {
     text-align: center;
@@ -178,7 +174,16 @@ code {
     border-radius: 1.1rem!important;
 }
 
+.markdown-body p:has(img) {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
 
+.markdown-body blockquote {
+    color: #161616da !important;
+    border-left: 0.20rem solid #161616bb !important;
+}
 
 .about-thing {
     display: flex;

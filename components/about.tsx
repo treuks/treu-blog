@@ -10,7 +10,7 @@ export default function About() {
         <>
             <div class="about-thing">
                 <div class="text-group"> 
-                    <span class="big-text">TreuKS</span>
+                    <span class="big-text">treuks</span>
                     <span class="smol-text"> / Isabelle</span>
                 </div>
 

@@ -1,34 +1,29 @@
 ---
-title: First blog post!
+title: test article
 published_at: 2024-02-21T00:04:30.502Z
 snippet: just a test article
 ---
 
-# Hello
-just testing out stuff out here
+# Image test
 
-```js
-    // testing if syntax highlighting works
-    // honestly just pretend that something cool is written in here
+Testing what this looks like, i cannot tell what markdown will do to this thing
 
-    const func = () => {
-        return "meow";
-    }
+![coc](https://kappa.lol/HFcgl)
 
-    const meow = (fun) => {
-        console.log(fun());
-    }
+Testing what this looks like, i cannot tell what markdown will do to this thing
 
-    meow(func);
-```
+> testing sgo quotes asokfoas lol xd
 
-## testing secondary hreadheaders
 
-`[DATA EXPUNGED]`
-
-# Erm
-# Erm
-# Erm
-# Erm
-# Erm
-
+df
+hfds
+h
+fdh
+df
+sh
+fd
+hsdf
+h
+sdf
+hds
+f
