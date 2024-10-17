@@ -8,7 +8,7 @@ import * as $index from "./routes/index.tsx";
 import * as $post_article_ from "./routes/post/[article].tsx";
 import * as $posts from "./routes/posts.tsx";
 
-import { type Manifest } from "$fresh/server.ts";
+import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
   routes: {

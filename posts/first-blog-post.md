@@ -1,29 +1,38 @@
 ---
-title: test article
+title: First blog post!
 published_at: 2024-02-21T00:04:30.502Z
 snippet: just a test article
 ---
 
-# Image test
+# Hello
 
-Testing what this looks like, i cannot tell what markdown will do to this thing
+just testing out stuff out here
 
-![coc](https://kappa.lol/HFcgl)
+```js
+// testing if syntax highlighting works
+// honestly just pretend that something cool is written in here
 
-Testing what this looks like, i cannot tell what markdown will do to this thing
+const func = () => {
+    return "meow";
+};
 
-> testing sgo quotes asokfoas lol xd
+const meow = (fun) => {
+    console.log(fun());
+};
 
+meow(func);
+```
 
-df
-hfds
-h
-fdh
-df
-sh
-fd
-hsdf
-h
-sdf
-hds
-f
+## testing secondary hreadheaders
+
+`[DATA EXPUNGED]`
+
+# Erm
+
+# Erm
+
+# Erm
+
+# Erm
+
+# Erm
