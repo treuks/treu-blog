@@ -1,0 +1,153 @@
+@import "@primer/css/color-modes/themes/light.scss";
+@import "@primer/css/color-modes/themes/dark.scss";
+@import "@primer/css/markdown/index.scss";
+
+.markdown-body {
+  background-color: var(--color-canvas-default);
+  color: var(--color-fg-default);
+
+  a {
+    color: var(--color-accent-fg);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  img {
+    &[align="center"] {
+      margin: 0 auto;
+    }
+
+    display: inline;
+  }
+
+  iframe {
+    background-color: white;
+    border: 0;
+    margin-bottom: 16px;
+  }
+
+  svg.octicon {
+    fill: currentColor;
+  }
+
+  .anchor > .octicon {
+    display: inline;
+  }
+
+  figcaption {
+    padding-top: 2px;
+    text-align: center;
+  }
+
+  ol {
+    list-style: decimal;
+  }
+
+  ul {
+    list-style: disc;
+  }
+
+  table {
+    width: fit-content;
+  }
+}
+
+.markdown-body .highlight .token,
+.gfm-highlight .token {
+  &.keyword {
+    color: var(--color-prettylights-syntax-keyword);
+  }
+
+  &.tag .token.class-name,
+  &.tag .token.script .token.punctuation {
+    color: var(--color-prettylights-syntax-storage-modifier-import);
+  }
+
+  &.operator,
+  &.number,
+  &.boolean,
+  &.tag .token.punctuation,
+  &.tag .token.script .token.script-punctuation,
+  &.tag .token.attr-name {
+    color: var(--color-prettylights-syntax-constant);
+  }
+
+  &.atrule {
+    color: var(--color-prettylights-syntax-keyword);
+  }
+
+  &.punctuation {
+    color: var(--color-prettylights-syntax-entity);
+  }
+
+  &.function {
+    color: var(--color-prettylights-syntax-entity);
+  }
+
+  &.string {
+    color: var(--color-prettylights-syntax-string);
+  }
+
+  &.comment {
+    color: var(--color-prettylights-syntax-comment);
+  }
+
+  &.class-name {
+    color: var(--color-prettylights-syntax-variable);
+  }
+
+  &.regex {
+    color: var(--color-prettylights-syntax-string);
+  }
+
+  &.regex .regex-delimiter {
+    color: var(--color-prettylights-syntax-constant);
+  }
+
+  &.tag .token.tag,
+  &.property {
+    color: var(--color-prettylights-syntax-entity-tag);
+  }
+
+  &.deleted {
+    color: var(--color-prettylights-syntax-markup-deleted-text);
+    background-color: var(--color-prettylights-syntax-markup-deleted-bg);
+  }
+
+  &.inserted {
+    color: var(--color-prettylights-syntax-markup-inserted-text);
+    background-color: var(--color-prettylights-syntax-markup-inserted-bg);
+  }
+}
+
+.markdown-body .markdown-code-title {
+  background-color: var(--bgColor-muted, var(--color-canvas-subtle));
+  padding: 8px 16px;
+  border-bottom: 1px solid var(--borderColor-muted,var(--color-border-muted));
+  margin: 0;
+  font-size: 85%;
+  font-weight: bold;
+  display: block;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  word-wrap: normal;
+  border: 0;
+}
+
+[data-footnote-ref]::before {
+  content: '[';
+}
+
+[data-footnote-ref]::after {
+  content: ']';
+}
