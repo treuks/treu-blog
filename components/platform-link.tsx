@@ -1,6 +1,3 @@
-import { Component } from "preact";
-
-import GithubLogo from "./logos/github.tsx";
 import type { ComponentChildren } from "preact";
 
 export default function PlatformLink(

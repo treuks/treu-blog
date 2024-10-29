@@ -1,10 +1,5 @@
 import PlatformLink from "./platform-link.tsx";
 import DiscordLink from "./discord-link.tsx";
-
-import GithubLogo from "./logos/github.tsx";
-import BlueskyLogo from "./logos/bluesky.tsx";
-import TwitchLogo from "./logos/twitch.tsx";
-
 export default function About() {
     return (
         <>
@@ -21,17 +16,17 @@ export default function About() {
                         name="GitHub"
                         href="https://github.com/treuks"
                     >
-                        <GithubLogo />
+                        <img src="Icons/github.svg" />
                     </PlatformLink>
                     <PlatformLink
                         name="Bluesky"
                         href="https://bsky.app/profile/treuks.com"
                     >
-                        <BlueskyLogo />
+                        <img src="Icons/bluesky.svg" />
                     </PlatformLink>
 
                     <PlatformLink name="Twitch" href="https://twitch.tv/treuks">
-                        <TwitchLogo />
+                        <img src="Icons/twitch.svg" />
                     </PlatformLink>
 
                     <DiscordLink />
