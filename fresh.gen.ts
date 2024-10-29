@@ -11,15 +11,15 @@ import * as $posts from "./routes/posts.tsx";
 import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
-  routes: {
-    "./routes/_404.tsx": $_404,
-    "./routes/_app.tsx": $_app,
-    "./routes/index.tsx": $index,
-    "./routes/post/[article].tsx": $post_article_,
-    "./routes/posts.tsx": $posts,
-  },
-  islands: {},
-  baseUrl: import.meta.url,
+    routes: {
+        "./routes/_404.tsx": $_404,
+        "./routes/_app.tsx": $_app,
+        "./routes/index.tsx": $index,
+        "./routes/post/[article].tsx": $post_article_,
+        "./routes/posts.tsx": $posts,
+    },
+    islands: {},
+    baseUrl: import.meta.url,
 } satisfies Manifest;
 
 export default manifest;

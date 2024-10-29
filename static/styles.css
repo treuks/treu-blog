@@ -1,13 +1,14 @@
 @font-face {
-    font-family: 'Outfit Var';
+    font-family: "Outfit Var";
     src: url(Fonts/Outfit/Outfit-VariableFont.woff2) format("woff2-variations");
     font-weight: 100 1000;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Martian Mono Var';
-    src: url(Fonts/MartianMono/MartianMono-VariableFont.woff2) format("woff2-variations");
+    font-family: "Martian Mono Var";
+    src: url(Fonts/MartianMono/MartianMono-VariableFont.woff2)
+        format("woff2-variations");
     font-weight: 100 1000;
     font-style: normal;
 }
@@ -15,24 +16,24 @@
 :root {
     font-family: "Outfit Var", sans-serif;
 
-    --code-font: "Martian Mono Var", "JetBrains Mono", "Cascadia Code", monospace;
+    --code-font:
+        "Martian Mono Var", "JetBrains Mono", "Cascadia Code", monospace;
     --sans-serif-font: "Outfit Var", sans-serif;
 }
 
 .background {
-    background-color: #CDFBF2;
+    background-color: #cdfbf2;
     width: 100svw;
     height: 100svh;
 }
 
 .blog-background {
-    background-color: #FBCDE3;
+    background-color: #fbcde3;
     width: 100%;
     min-height: 100svh;
 }
 
 .footer {
-
     position: fixed;
     bottom: 0;
     right: 0;
@@ -42,13 +43,10 @@
     align-items: center;
     justify-content: center;
 
-
     height: 2.85rem;
     width: 15rem;
     color: #161616c2;
 }
-
-
 
 .article-stuff {
     text-align: center;
@@ -67,7 +65,7 @@
 
 .article-background {
     padding-top: 2rem;
-    background-color: #FBCDE3;
+    background-color: #fbcde3;
     display: flex;
     justify-content: center;
 }
@@ -76,7 +74,6 @@
     font-weight: 200;
     color: #161616d7;
     font-size: 3.25rem;
-
 }
 
 .post-card-title a {
@@ -110,7 +107,7 @@
 }
 
 .markdown-body {
-    background-color: #FBCDE3 !important;
+    background-color: #fbcde3 !important;
     font-family: var(--sans-serif-font) !important;
     padding-bottom: 3rem;
 }
@@ -124,8 +121,6 @@
     font-size: 3rem !important;
     font-weight: 200 !important;
 }
-
-
 
 .markdown-body h2 {
     border-bottom: 1px solid #1616165d !important;
@@ -217,7 +212,7 @@ code {
 
     border-radius: 1.666rem;
 
-    background-color: #F4F4F4;
+    background-color: #f4f4f4;
 }
 
 .discord-logo {
@@ -247,9 +242,9 @@ code {
 
     border-radius: 1.65rem;
 
-    background-color: #F4F4F4;
+    background-color: #f4f4f4;
 
-    box-shadow: 1px 3px 4px #12836D69;
+    box-shadow: 1px 3px 4px #12836d69;
     transition: box-shadow 0.25s;
 }
 
@@ -297,7 +292,6 @@ code {
     margin-left: 4rem;
 }
 
-
 @media screen and (max-width: 600px) {
     .list-of-links {
         flex-direction: column !important;
@@ -329,7 +323,7 @@ code {
         font-size: 2rem !important;
     }
 
-    .link[aria-current='page'] {
+    .link[aria-current="page"] {
         font-size: 3.5rem !important;
     }
 
@@ -387,7 +381,6 @@ code {
     padding: 0;
 }
 
-
 .link {
     color: #161616a3;
     font-size: 3.5rem;
@@ -400,7 +393,7 @@ code {
     font-weight: 800;
 }
 
-.link[aria-current='page'] {
+.link[aria-current="page"] {
     color: #161616;
     font-weight: 900;
     font-size: 4rem;

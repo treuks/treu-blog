@@ -1,65 +1,79 @@
-import { getPost, Post } from "../posts.tsx"
+import { getPost, Post } from "../posts.tsx";
 import { Handlers } from "$fresh/server.ts";
 import { PageProps } from "$fresh/server.ts";
-import Header from "../../components/header.tsx"
-import Footer from "../../components/footer.tsx"
-import { CSS, render } from "$gfm";
-import { Head } from "$fresh/runtime.ts"
+import Header from "../../components/header.tsx";
+import Footer from "../../components/footer.tsx";
+import { CSS, render } from "@deno/gfm";
+import { Head } from "$fresh/runtime.ts";
 
 export const handler: Handlers<Post> = {
     async GET(_req, ctx) {
         const post = await getPost(ctx.params.article);
         if (post === null) return ctx.renderNotFound();
-        return ctx.render(post)
-    }
-}
+        return ctx.render(post);
+    },
+};
 
 export default function ArticlePage(props: PageProps<Post>) {
-    const post = props.data
+    const post = props.data;
     return (
         <>
             <main class="blog-background">
                 <Head>
-                    <style dangerouslySetInnerHTML={{__html: CSS}}/>
+                    <style dangerouslySetInnerHTML={{ __html: CSS }} />
                     <title>treuks - {post.title}</title>
                     <meta property="og:title" content={post.title} />
                     <meta property="og:description" content={post.snippet} />
                     <meta property="og:url" content={`${props.url}`} />
-                    
-                    // we do a bit of hardcoding :tf: 
-                    <meta property="og:image" content="https://treuks.com/placeholder.jpg" />
+
+                    // we do a bit of hardcoding :tf:
+                    <meta
+                        property="og:image"
+                        content="https://treuks.com/placeholder.jpg"
+                    />
                     <meta property="og:image:width" content="512" />
                     <meta property="og:image:height" content="512" />
-                    <meta property="og:image:alt" content="Chinese symbol for the number 7, on a pink background" />
-                    <meta name="og:site_name" content="treuks"/>
+                    <meta
+                        property="og:image:alt"
+                        content="Chinese symbol for the number 7, on a pink background"
+                    />
+                    <meta name="og:site_name" content="treuks" />
 
-                    <meta property="og:type" content="article"/>
-                    <meta name="article:author" content="treuks"/>
-                    <meta name="article:published_time" content={post.publishedAt.toISOString()} />
+                    <meta property="og:type" content="article" />
+                    <meta name="article:author" content="treuks" />
+                    <meta
+                        name="article:published_time"
+                        content={post.publishedAt.toISOString()}
+                    />
 
                     <meta name="description" content={post.snippet} />
-                    <meta name="theme-color" content="#fbcde3"/>
-
+                    <meta name="theme-color" content="#fbcde3" />
                 </Head>
 
-                <Header/>
+                <Header />
                 <div class="article-stuff">
                     <h1 class="article-title">{post.title}</h1>
-                    <time class="article-date">{new Date(post.publishedAt).toLocaleDateString("en-us", {
-                        year: "numeric",
-                        month: "long",
-                        day: "numeric"
-                    })}
+                    <time class="article-date">
+                        {new Date(post.publishedAt).toLocaleDateString(
+                            "en-us",
+                            {
+                                year: "numeric",
+                                month: "long",
+                                day: "numeric",
+                            },
+                        )}
                     </time>
                 </div>
                 <article class="article-background">
-                    <div class="article-text markdown-body"
-                        dangerouslySetInnerHTML={{ __html: render(post.content)}}
+                    <div
+                        class="article-text markdown-body"
+                        dangerouslySetInnerHTML={{
+                            __html: render(post.content),
+                        }}
                     />
-                </article>  
+                </article>
                 <Footer />
             </main>
-
         </>
-    )
+    );
 }
