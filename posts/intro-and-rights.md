@@ -14,7 +14,7 @@ the country I'm from, I guess.
 
 # Introduction
 
-Hi, I'm Aurora, You can also call me Aura (as a nickname). I use she/her pronouns, 
+Hi, I'm Anny. I use she/her pronouns, 
 I'm Ukrainian and also transgender, which is considered to be rare for all the wrong reasons. 
 So I guess, let's talk about why.
 
