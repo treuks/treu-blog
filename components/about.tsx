@@ -19,7 +19,7 @@ export default function About() {
                     </PlatformLink>
                     <PlatformLink
                         name="Bluesky"
-                        href="https://bsky.app/profile/treuks.com"
+                        href="https://bsky.app/profile/did:plc:2dscizrfsdsbxkytjsyllhc5"
                     >
                         <img src="Icons/bluesky.svg" />
                     </PlatformLink>
