@@ -21,7 +21,11 @@
 }
 
 .background {
+
+    display: flex;
+    flex-direction: column;
     background-color: #cdfbf2;
+
     width: 100svw;
     height: 100svh;
 }
@@ -215,10 +219,20 @@ code {
 
 .about-thing {
     display: flex;
+    flex: 1;
+    margin-bottom: 10rem;
     flex-direction: column;
-    margin-top: 12rem;
     justify-content: center;
     align-items: center;
+}
+
+.abouter-thing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
 }
 
 .text-group {
@@ -226,26 +240,14 @@ code {
 }
 
 .platform-links {
+    padding: 0;
     display: flex;
     flex-direction: row;
     gap: 1.7rem;
     list-style-type: none;
 }
 
-.discord-thing {
-    display: flex;
-    flex-direction: row;
-    gap: 0.8rem;
-    align-items: center;
-    height: 4.5rem;
 
-    padding-left: 2rem;
-    padding-right: 2rem;
-
-    border-radius: 1.666rem;
-
-    background-color: #f4f4f4;
-}
 
 .discord-logo {
     display: flex;
@@ -335,6 +337,10 @@ code {
         align-items: flex-start;
     }
 
+    .abouter-thing {
+        align-items: flex-start;
+    }
+
     .text-group {
         padding-left: 2rem;
     }
@@ -369,6 +375,7 @@ code {
 
     .platform-links {
         flex-direction: column;
+        padding-left: 2rem;
     }
 
     .article-text {
