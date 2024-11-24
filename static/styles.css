@@ -182,9 +182,7 @@
     border-bottom: 1px solid var(--secondary-color) !important;
 }
 
-.markdown-body blockquote {
-    border-left: .25em solid var(--outline-color) !important;
-}
+
 
 .article-text {
     width: 42svw;
@@ -221,7 +219,7 @@ code {
 }
 
 .markdown-body blockquote {
-    color: var(--secondary-color) !important;
+    color: var(--main-color) !important;
     border-left: 0.20rem solid var(--outline-color) !important;
 }
 
