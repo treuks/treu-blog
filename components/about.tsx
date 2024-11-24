@@ -17,27 +17,27 @@ export default function About() {
                             name="GitHub"
                             href="https://github.com/treuks"
                         >
-                            <img src="Icons/github.svg" />
+                            <img src="Icons/github.svg" alt="GitHub logo" />
                         </PlatformLink>
                         <PlatformLink
                             name="Bluesky"
                             href="https://bsky.app/profile/did:plc:2dscizrfsdsbxkytjsyllhc5"
                         >
-                            <img src="Icons/bluesky.svg" />
+                            <img src="Icons/bluesky.svg" alt="Bluesky logo" />
                         </PlatformLink>
 
                         <PlatformLink
                             name="Twitch"
                             href="https://twitch.tv/treuks"
                         >
-                            <img src="Icons/twitch.svg" />
+                            <img src="Icons/twitch.svg" alt="Twitch logo" />
                         </PlatformLink>
 
                         <PlatformLink
                             name="Discord"
                             href="https://discordapp.com/users/291634765751386112"
                         >
-                            <img src="Icons/discord.svg" />
+                            <img src="Icons/discord.svg" alt="Discord logo" />
                         </PlatformLink>
                     </ul>
                 </div>

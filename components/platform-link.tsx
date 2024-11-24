@@ -6,7 +6,11 @@ export default function PlatformLink(
     return (
         <>
             <li>
-                <a href={props.href} name={props.name}>
+                <a
+                    href={props.href}
+                    name={props.name}
+                    aria-label={"Link to my " + props.name}
+                >
                     <div class="link-block">
                         <div class="link-logo">
                             {props.children}
