@@ -148,41 +148,41 @@
     background-color: var(--bg-color) !important;
     font-family: var(--sans-serif-font) !important;
     padding-bottom: 5rem;
+
+    & p {
+        font-size: 1.25rem !important;
+    }
+
+    & h1 {
+        border-bottom: 1px solid var(--outline-color) !important;
+        font-size: 3rem !important;
+        font-weight: 200 !important;
+    }
+
+    & h2 {
+        border-bottom: 1px solid var(--outline-color) !important;
+        font-size: 2.5rem;
+        font-weight: 300 !important;
+    }
+
+    & h3,
+    h4,
+    h5,
+    h6 {
+        border-bottom: 1px solid var(--secondary-color) !important;
+    }
+
+    & p:has(img) {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+    }
+
+    & blockquote {
+        color: var(--main-color) !important;
+        border-left: 0.20rem solid var(--outline-color) !important;
+    }
 }
-
-.markdown-body p {
-    font-size: 1.25rem !important;
-}
-
-.markdown-body h1 {
-    border-bottom: 1px solid var(--outline-color) !important;
-    font-size: 3rem !important;
-    font-weight: 200 !important;
-}
-
-.markdown-body h2 {
-    border-bottom: 1px solid var(--outline-color) !important;
-    font-size: 2.5rem;
-    font-weight: 300 !important;
-}
-
-.markdown-body h3 {
-    border-bottom: 1px solid var(--secondary-color) !important;
-}
-
-.markdown-body h4 {
-    border-bottom: 1px solid var(--secondary-color) !important;
-}
-
-.markdown-body h5 {
-    border-bottom: 1px solid var(--secondary-color) !important;
-}
-
-.markdown-body h6 {
-    border-bottom: 1px solid var(--secondary-color) !important;
-}
-
-
 
 .article-text {
     width: 42svw;
@@ -210,17 +210,6 @@ code {
 .markdown-body .highlight pre,
 .markdown-body pre {
     border-radius: 1.1rem !important;
-}
-
-.markdown-body p:has(img) {
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-}
-
-.markdown-body blockquote {
-    color: var(--main-color) !important;
-    border-left: 0.20rem solid var(--outline-color) !important;
 }
 
 .about-thing {
@@ -287,10 +276,10 @@ code {
     outline: 1px solid var(--outline-color);
 
     transition: box-shadow 0.25s;
-}
 
-.link-block:hover {
-    background-color: var(--button-hover-color);
+    &:hover {
+        background-color: var(--button-hover-color);
+    }
 }
 
 .link-logo {
@@ -438,16 +427,16 @@ code {
     font-size: 3.5rem;
     font-weight: 300;
     transition: color, font-weight 0.15s;
-}
 
-.link:hover {
-    color: var(--main-color);
-    font-weight: 800;
-}
+    &:hover {
+        color: var(--main-color);
+        font-weight: 800;
+    }
 
-.link[aria-current="page"] {
-    color: var(--main-color);
-    font-weight: 900;
-    font-size: 4rem;
-    text-decoration: none;
+    &[aria-current="page"] {
+        color: var(--main-color);
+        font-weight: 900;
+        font-size: 4rem;
+        text-decoration: none;
+    }
 }
