@@ -66,6 +66,9 @@ export default function ArticlePage(props: PageProps<Post>) {
                 </div>
                 <article class="article-background">
                     <div
+                        data-color-mode="auto"
+                        data-light-theme="light"
+                        data-dark-theme="dark"
                         class="article-text markdown-body"
                         dangerouslySetInnerHTML={{
                             __html: render(post.content),

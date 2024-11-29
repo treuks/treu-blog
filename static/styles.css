@@ -210,6 +210,18 @@ code {
 .markdown-body .highlight pre,
 .markdown-body pre {
     border-radius: 1.1rem !important;
+    box-shadow: 2px 2px 16px #cc227430;
+
+    /* border: #dadada 0.22rem solid; */
+    /* outline: #cccccc 0.13rem solid; */
+
+    @media (prefers-color-scheme: dark) {
+        box-shadow: 2px 2px 16px #00000096;
+
+        border: #3e3e3e 0.22rem solid;
+        outline: #000000 0.13rem solid;
+
+    }
 }
 
 .about-thing {
