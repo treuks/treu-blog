@@ -22,6 +22,10 @@
     --sans-serif-font: "Outfit Var", sans-serif;
 }
 
+body {
+    background-color: var(--bg-color);
+}
+
 .background {
 
     display: flex;
@@ -37,7 +41,6 @@
     flex-direction: column;
     background-color: var(--bg-color);
     width: 100%;
-    min-height: 100svh;
 }
 
 .footer {
