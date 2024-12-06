@@ -4,6 +4,8 @@ import { PageProps } from "$fresh/server.ts";
 import Header from "../../components/header.tsx";
 import Footer from "../../components/footer.tsx";
 import { CSS, render } from "@deno/gfm";
+import "npm:prismjs@1.29.0/components/prism-bash.js";
+
 import { Head } from "$fresh/runtime.ts";
 
 export const handler: Handlers<Post> = {
