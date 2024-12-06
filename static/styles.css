@@ -188,7 +188,7 @@ body {
     }
 
     & blockquote {
-        color: var(--main-color) !important;
+        color: var(--post-text-color) !important;
         border-left: 0.20rem solid var(--outline-color) !important;
     }
 }
@@ -196,8 +196,7 @@ body {
 .article-text {
     width: 42svw;
     max-width: 56rem;
-    color: var(--main-color) !important;
-    opacity: 0.70;
+    color: var(--post-text-color) !important;
 }
 
 pre {
