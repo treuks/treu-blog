@@ -20,7 +20,13 @@
     --code-font:
         "Martian Mono Var", "JetBrains Mono", "Cascadia Code", monospace;
     --sans-serif-font: "Outfit Var", sans-serif;
+
 }
+
+* {
+    scrollbar-color: var(--secondary-color) var(--bg-color);
+}
+
 
 body {
     background-color: var(--bg-color);
@@ -215,15 +221,13 @@ code {
     border-radius: 1.1rem !important;
     box-shadow: 2px 2px 16px #cc227430;
 
-    /* border: #dadada 0.22rem solid; */
-    /* outline: #cccccc 0.13rem solid; */
+    scrollbar-color: var(--secondary-color) var(--color-canvas-subtle);
 
     @media (prefers-color-scheme: dark) {
         box-shadow: 2px 2px 16px #00000096;
 
         border: #3e3e3e 0.22rem solid;
         outline: #000000 0.13rem solid;
-
     }
 }
 
