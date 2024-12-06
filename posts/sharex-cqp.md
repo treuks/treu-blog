@@ -4,6 +4,26 @@ published_at: 2024-12-06T13:13:20.087Z
 snippet: Modifying the FFmpeg parameters in ShareX to use CQP instead of CBR.
 ---
 
+# TL;DR
+
+Enable custom commands and replace the normal CBR bitrate setting, which is
+like:
+
+```sh
+-b:v 6000k
+```
+
+With:
+
+```sh
+-rc constqp -cq 24
+```
+
+- `-rc constqp` enables CQP
+- `-cq 24` sets the quantization to 24
+
+# The story
+
 I'm a big fan of high quality recordings, and I'm an even bigger fan of small
 file sizes, which is exactly why I love CQP.
 
