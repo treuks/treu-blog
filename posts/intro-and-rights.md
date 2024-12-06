@@ -14,9 +14,9 @@ the country I'm from, I guess.
 
 # Introduction
 
-Hi, I'm Anny. I use she/her pronouns, 
-I'm Ukrainian and also transgender, which is considered to be rare for all the wrong reasons. 
-So I guess, let's talk about why.
+Hi, I'm treuks. I use she/her pronouns, I'm Ukrainian and also transgender,
+which is considered to be rare for all the wrong reasons. So I guess, let's talk
+about why.
 
 # LGBTQIA+ rights in Ukraine
 
